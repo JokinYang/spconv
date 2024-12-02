@@ -27,6 +27,7 @@ function repair_wheel {
 gcc -v
 export SPCONV_DISABLE_JIT="1"
 export CUMM_CUDA_ARCH_LIST="all"
+export large_kernel_fast_algo=True
 # export SPCONV_PYTHON_LIST="3.7;3.8;3.9;3.10"
 # Compile wheels, we only support 3.6-3.10.
 # "/opt/python/cp36-cp36m/bin/pip" wheel /io/ --no-deps -w /io/wheelhouse_tmp
